@@ -1,0 +1,14 @@
+<!-- springboot 는 기본적으로 resources/static 경로 내의 파일을 정적으로 사용한다.
+  따라서 여기에 테스트용 html 을 만듬. -->
+
+<!DOCTYPE html>
+<!-- thymeleaf 적용 확인하기 위함. -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>called by controller</title>
+</head>
+<body>
+<p th:text="'halo.' + ${data}">halo. custom</p>
+</body>
+</html>
